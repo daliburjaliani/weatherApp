@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+        <title>weather</title>
+        <link rel="stylesheet" type="text/css" href="../static/style.css"/>
+    </head>
+    <body>
+    <div class="main">
+        <header>
+            <h1><a href="/">WEATHER</a></h1>
+            <nav>
+                <ul class="nav">
+                    <li><a href="/">current</a></li>
+                    <li><a href="#">hourly</a></li>
+                    <li><a href="#">5 days</a></li>
+                    <li><a href="#">week</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <div class="search">
+            <form method="POST" action="/">
+                <button type="submit" class="search-button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <input type="text" contentEditable="true" name="city" width="100" placeholder="Search location" id="search">
+            </form>
+        </div>
+        <div class="first-con inline">
+            <h3 class="city">{{city}}</h3>
+            <div class="degrees">
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81" height="81" viewBox="0 0 81 81">
+                    <defs>
+                    <filter id="Ellipse_1" x="0" y="0" width="81" height="81" filterUnits="userSpaceOnUse">
+                      <feOffset dy="3" input="SourceAlpha"/>
+                      <feGaussianBlur stdDeviation="3" result="blur"/>
+                      <feFlood flood-opacity="0.078"/>
+                      <feComposite operator="in" in2="blur"/>
+                      <feComposite in="SourceGraphic"/>
+                    </filter>
+                    </defs>
+                    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_1)">
+                    <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="31.5" cy="31.5" r="31.5" transform="translate(9 6)" fill="#ccb7fb"/>
+                    </g>
+                    </svg>
+                </div>
+                <h3 class="deg">{{temp}}</h3>
+            </div>
+            <p class="main-inf">feels like {{feel_like}}</p>
+            <p class="info">wind : {{wind}}</p>
+            <p class="info">humidity : {{humimdity}}</p>
+            <p class="info">visibility : {{visibility}}</p>
+        </div>
+        <div class="sec-con inline">
+            <img src={{url}}>
+            <p class="main-inf">{{description}}</p>
+            <p class="info">cloud cover : {{cloud}}</p>
+            <p class="info">max : {{temp_max}}</p>
+            <p class="info">min : {{temp_min}}</p>
+        </div>
+    </main>
+    </div>
+    <div class="secondary">
+        <div class="some">
+            <div class="cities">
+                <h2>New York</h2>
+                <p class="some-deg">{{deg1}}</p>
+                <p class="weth">{{w2}}</p>
+            </div>
+            <div class="cities">
+                <h2>London</h2>
+                <p class="some-deg">{{deg2}}</p>
+                <p class="weth">{{w2}}</p>
+            </div>
+            <div class="cities">
+                <h2>Tbilisi</h2>
+                <p class="some-deg">{{deg3}}</p>
+                <p class="weth">{{w3}}</p>
+            </div>
+            <div class="cities">
+                <h2>Berlin</h2>
+                <p class="some-deg">{{deg4}}</p>
+                <p class="weth">{{w4}}</p>
+            </div>
+            <div class="cities">
+                <h2>Paris</h2>
+                <p class="some-deg">{{deg5}}</p>
+                <p class="weth">{{w5}}</p>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
+
+

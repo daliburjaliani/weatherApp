@@ -1,0 +1,172 @@
+body{
+    background-color: #E0E9FF;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    min-width: 300px;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    background-color: #CCE0FE;
+    color: #3F3F3F;
+    border-radius: 1.9rem;
+    margin-bottom: 0.5rem;
+    max-width: 900px;
+    min-width: 300px;
+    height: 500px;
+    padding: 2.0rem;
+    font-family: Baskerville Old Face;
+}
+
+nav{
+    float: right;
+    margin-top: 1.8rem;
+    margin-right: 0.5rem;
+}
+
+
+nav ul li{
+    display: inline-block;
+    font-family: Baskerville Old Face;
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+li a{
+    text-decoration: none;
+    color: #9EA4B3;
+}
+
+li a:hover{
+    color: #6A6E75;
+}
+
+h1 a{
+    color: #6A6E75;
+    text-decoration: none;
+    font-family: Bodoni MT;
+    font-size: 60px;
+}
+
+header h1, header nav{
+    display: inline-block;
+}
+
+header{
+    max-width: 964px;
+    min-width: 364px;
+}
+
+#search{
+    width: 100%;
+    height: 2.3rem;
+    border: 0;
+    border-radius: 1.5rem;
+    text-align: left;
+    margin-left: 1.0rem;
+    color: #61646B; /*#BBBBBB*/
+}
+
+.search{
+    margin-right: 2.4rem;
+}
+
+h3{
+    letter-spacing: 0.2rem;
+    width: 226px;
+    height: 57px;
+    font-size: 50px;
+}
+
+.deg{
+    vertical-align: middle;
+    width: 226px;
+    height: 57px;
+    font-size: 50px;
+}
+.degrees{
+    width: 226px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-inf{
+    font-size: 32px;
+    letter-spacing: 0.15rem;
+}
+
+.info{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.first-con{
+    margin-top: 2.0rem;
+    margin-left: 1.6rem;
+}
+
+.sec-con{
+    margin-top: 0;
+    margin-left: 2.6rem;
+}
+
+img{
+    width: 320px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+
+.secondary{
+    background-image: linear-gradient( 100deg, rgba(205, 229, 255, 0.8), rgba(204, 224, 254, 1.7) );
+    height: 634px;
+    width: 330px;
+    float: right;
+    border-radius: 1.9rem;
+    margin-right: 8rem;
+    margin-top: 3rem;
+}
+
+.main, .secondary{
+    display: inline-block;
+}
+
+.main{
+    width: 1000px;
+}
+
+.some{
+    color: #61646B;
+    font-family: Baskerville Old Face;
+    margin-left: 0.8rem;
+
+}
+
+.cities{
+    margin-bottom: 1.0rem;
+    margin-left: 0.7rem;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 0.2rem;
+}
+
+.some-deg{
+    font-size: 25px;
+    margin-top: 4px;
+    margin-bottom: 0.2rem;
+}
+
+.weth{
+    margin-top: 4px;
+}
+
+.error{
+    text-align: center;
+}
