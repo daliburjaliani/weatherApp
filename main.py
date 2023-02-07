@@ -177,16 +177,17 @@ def main():
         if request.method == 'POST':
             city = request.form['city']
 
-            if current_weather(city)[8] == "cloudy" :
+            if current_weather(city)[8] == "cloudy":
                 url = "../static/cloud.png"
             else:
                 url = "../static/sun.png"
 
-            temp, min_temp, max_temp, feel_like, humidity, visibility, wind_speed, cloud, description = current_weather(city)
+            temp, min_temp, max_temp, feel_like, humidity, visibility, wind_speed, cloud, description = current_weather(
+                city)
 
         else:
 
-            city="london"
+            city = "tbilisi"
 
             if current_weather(city)[8] == "cloud":
                 url = "../static/cloud.png"
